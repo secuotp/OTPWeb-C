@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Member section</title>
+</head>
+<body>
+    <center>
+        <h1>Polwath Web Service</h1>
+    </center>
+    <div style="width: 660px; height: 405px; padding-top: 10px; padding-left: 10px; padding-right: 10px; margin: 0 auto; border: 1px solid;">
+        <div style="float: left; padding-left: 10px; padding-right: 10px; border: 1px solid; padding-bottom: 10px;">
+            <center>
+                <h3>Login</h3>
+            </center>
+            <form action="process.aspx" method="post">
+                <input type="hidden" name="type" value="login"/>
+                <div style="float: left; width: 70px; line-height: 26.5px; ">
+                    Username 
+                    <br>
+                    Password 
+                </div>
+                <div style="float: left; margin: 0px 2px 0px 0px; line-height: 26.5px; ">
+                    : 
+                    <br />
+                    : 
+                </div>
+                <div style="float: left; line-height: 26.5px; ">
+                    <input type="text" name="user" />
+                    <br>
+                    <input type="password" name="pass" />
+                </div>
+                <div style="padding-top: 10px; clear: left;">
+                    <center>
+                        <input type="submit" value="Login" />
+                    </center>
+                </div>
+</form>
+        </div>
+        <div style="float: right; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; border: 1px solid;">
+            <center>
+                <h3>Register</h3>
+            </center>
+            <form action="process.aspx" method="post">
+                <input type="hidden" name="type" value="register" />
+                <h4>Account details section</h4>
+                <div style="float: left; width: 150px; line-height: 26.5px; ">
+                    Username
+                    <br>
+                    Password
+                    <br>
+                    Reenter Password
+                </div>
+                <div style="float: left; margin: 0px 10px 10px 0px; line-height: 26.5px; ">
+                    :
+                    <br>
+                    :
+                    <br>
+                    :
+                </div>
+                <div style="float: left; line-height: 26.5px; ">
+                    <input type="text" name="user" />
+                    <br>
+                    <input type="password" name="pass" />
+                    <br>
+                    <input type="password" name="repass" />
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h4>User details section</h4>
+                <div style="float: left; width: 150px; line-height: 26.5px; ">
+                    Firstname
+                    <br>
+                    Lastname
+                    <br>
+                    Email
+                    <br>
+                    Phone number
+                    <br>
+                </div>
+                <div style="float: left; margin: 0px 10px 10px 0px; line-height: 26.5px; ">
+                    :
+                    <br>
+                    :
+                    <br>
+                    :
+                    <br>
+                    :
+                </div>
+                <div style="float: left; line-height: 26.5px; ">
+                    <input type="text" name="fname" />
+                    <br>
+                    <input type="text" name="lname" />
+                    <br>
+                    <input type="email" name="email" />
+                    <br>
+                    <input type="tel" name="pnumber" />
+                    <br>
+                </div>
+                <div style="padding-top: 10px; clear: left;">
+                    <center>
+                        <input type="submit" value="Register" />
+                    </center>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <center>
+        (C) Polwath Rojchalermritra - 2014
+    </center>
+</body>
+</html>
