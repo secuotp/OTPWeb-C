@@ -84,6 +84,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="C-Connector.dll" />
     <Content Include="change.aspx" />
     <Content Include="EditUser.aspx" />
     <Content Include="index.html" />
