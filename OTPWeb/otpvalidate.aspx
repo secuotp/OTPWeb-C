@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="otpvalidate.aspx.cs" Inherits="OTPWeb.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="otpvalidate.aspx.cs" Inherits="OTPWeb.otpvalidate" %>
 
 <%@ Import Namespace="C_Connector" %>
 <%@ Import Namespace="WebFunc" %>

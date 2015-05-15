@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
+namespace OTPWeb {
     
     
-    public partial class WebForm1 {
+    public partial class process {
     }
 }

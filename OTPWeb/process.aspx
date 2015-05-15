@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="process.aspx.cs" Inherits="OTPWeb.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="process.aspx.cs" Inherits="OTPWeb.process" %>
 <%@ Import Namespace="C_Connector" %>
 <%@ Import Namespace="WebFunc" %>
 <%@ import Namespace="System.Data.SqlClient" %>

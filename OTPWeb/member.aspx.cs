@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication1
+namespace OTPWeb
 {
     public partial class member : System.Web.UI.Page
     {
