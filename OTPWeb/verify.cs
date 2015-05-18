@@ -12,7 +12,7 @@ namespace WebFunc
         {
             SqlConnection con;
             SqlCommand sql;
-            var auth = "Server=POLWATH-2-PC\\POLWATH;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
+            var auth = "Server=OTPTEST\\OTPWEBTEST;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
             con = new SqlConnection(auth);
             con.Open();
             sql = new SqlCommand("select username from MemberAuthen where username='" + username + "' and password='" + password + "' COLLATE SQL_Latin1_General_Cp437_BIN", con);
@@ -27,7 +27,7 @@ namespace WebFunc
         {
             SqlConnection con;
             SqlCommand sql;
-            var auth = "Server=POLWATH-2-PC\\POLWATH;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
+            var auth = "Server=OTPTEST\\OTPWEBTEST;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
             con = new SqlConnection(auth);
             con.Open();
             sql = new SqlCommand("select otpenabled from MemberAuthen where username='" + username + "'", con);
@@ -42,7 +42,7 @@ namespace WebFunc
         {
             SqlConnection con;
             SqlCommand sql;
-            var auth = "Server=POLWATH-2-PC\\POLWATH;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
+            var auth = "Server=OTPTEST\\OTPWEBTEST;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
             con = new SqlConnection(auth);
             con.Open();
             sql = new SqlCommand("select otpmethod from MemberAuthen where username='" + username + "'", con);
@@ -55,7 +55,7 @@ namespace WebFunc
         {
             SqlConnection con;
             SqlCommand sql;
-            var auth = "Server=POLWATH-2-PC\\POLWATH;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
+            var auth = "Server=OTPTEST\\OTPWEBTEST;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
             con = new SqlConnection(auth);
             con.Open();
             sql = new SqlCommand("select * from MemberDetails where username='" + username + "'", con);

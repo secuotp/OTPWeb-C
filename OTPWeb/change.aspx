@@ -18,7 +18,7 @@
         {
             SqlConnection con;
             SqlCommand sqlCommand;
-            var auth = "Server=POLWATH-2-PC\\POLWATH;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
+            var auth = "Server=OTPTEST\\OTPWEBTEST;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
             con = new SqlConnection(auth);
             con.Open();
             

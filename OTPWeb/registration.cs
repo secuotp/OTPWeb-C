@@ -19,7 +19,7 @@ namespace WebFunc
         {
             SqlConnection con;
             SqlCommand sql, sql2;
-            var auth = "Server=POLWATH-2-PC\\POLWATH;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
+            var auth = "Server=OTPTEST\\OTPWEBTEST;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
             con = new SqlConnection(auth);
             con.Open();
             sql = new SqlCommand("select username from MemberDetails where username='" + username + "' COLLATE SQL_Latin1_General_Cp437_BIN", con);
@@ -45,7 +45,7 @@ namespace WebFunc
         {
             SqlConnection con;
             SqlCommand count, sql, sql2;
-            var auth = "Server=POLWATH-2-PC\\POLWATH;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
+            var auth = "Server=OTPTEST\\OTPWEBTEST;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
             con = new SqlConnection(auth);
             con.Open();
             count = new SqlCommand("select count(*) from MemberDetails",con);
@@ -76,7 +76,7 @@ namespace WebFunc
         public static void disableOTP(string username){
             SqlConnection con;
             SqlCommand sql;
-            var auth = "Server=POLWATH-2-PC\\POLWATH;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
+            var auth = "Server=OTPTEST\\OTPWEBTEST;UID=admin;PASSWORD=test;Database=Member;Max Pool Size=400;Connect Timeout=600;";
             con = new SqlConnection(auth);
             con.Open();
             sql = new SqlCommand("update MemberAuthen set otpenabled=0 where username='" + username + "' COLLATE SQL_Latin1_General_Cp437_BIN", con);
