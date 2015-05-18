@@ -23,7 +23,7 @@ namespace WebFunc
             return result;
         }
 
-        public static bool IsOTPEnabled(string username)
+        public static string IsOTPEnabled(string username)
         {
             SqlConnection con;
             SqlCommand sql;
@@ -32,10 +32,11 @@ namespace WebFunc
             con.Open();
             sql = new SqlCommand("select otpenabled from MemberAuthen where username='" + username + "'", con);
             SqlDataReader reader = sql.ExecuteReader();
-            bool otp = reader.Read();
+            reader.Read();
+            string value = reader[0].ToString();
             reader.Close();
 
-            return otp;
+            return value;
         }
 
         public static SqlDataReader whatOTPMethod(string username)

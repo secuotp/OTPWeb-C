@@ -10,9 +10,9 @@
         var username = Request["user"];
         var password = Request["pass"];
         bool check = verify.loginVerify(username, password);
-        bool otp = verify.IsOTPEnabled(username);
+        string otp = verify.IsOTPEnabled(username);
         
-        if (check == true && otp == true)
+        if (check == true && otp.Equals("True"))
         {
             SqlDataReader otpType = verify.whatOTPMethod(username);
             otpType.Read();
@@ -34,7 +34,8 @@
                 </form>
             </div>
 <%
-            } else if (check == true && otp == false)
+        }
+        else if (check == true && otp.Equals("False"))
             {
                 Response.Cookies["cookie"].Value = username;
                 Response.Cookies["cookie"].Expires = DateTime.Now.AddMinutes(15);
