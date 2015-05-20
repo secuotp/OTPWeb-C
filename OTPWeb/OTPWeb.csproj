@@ -93,6 +93,7 @@
     <Content Include="packages.config" />
     <Content Include="process.aspx" />
     <Content Include="otpvalidate.aspx" />
+    <None Include="Properties\PublishProfiles\OTPWeb.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
